@@ -80,19 +80,6 @@
                 "Internal libraries": 0
             },
             {
-                "_name": "Git",
-                "Overall NCBI use": 1,
-                "Internal docs in DT": 1,
-                "Links to external docs in DT": 2,
-                "Links to self directed training in DT": 0,
-                "NCBI experts": 1,
-                "Existing, and advertised mailing list?": 0,
-                "Mailing list traffic": 0,
-                "Tool simplicity": 0,
-                "Links to books written": 2,
-                "Internal libraries": 0
-            },
-            {
                 "_name": "Django",
                 "Overall NCBI use": 0,
                 "Internal docs in DT": 0,
@@ -104,6 +91,19 @@
                 "Tool simplicity": 1,
                 "Links to books written": 0,
                 "Internal libraries": 1
+            },
+            {
+                "_name": "Git",
+                "Overall NCBI use": 1,
+                "Internal docs in DT": 1,
+                "Links to external docs in DT": 2,
+                "Links to self directed training in DT": 0,
+                "NCBI experts": 1,
+                "Existing, and advertised mailing list?": 0,
+                "Mailing list traffic": 0,
+                "Tool simplicity": 0,
+                "Links to books written": 2,
+                "Internal libraries": 0
             },
             {
                 "_name": "Automated deployment",
