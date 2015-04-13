@@ -6,7 +6,7 @@
     <style>
 
     body {
-      font: 10px sans-serif;
+      font: 13px sans-serif;
     }
 
     .axis path,
@@ -29,7 +29,32 @@
 
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script>
-       var margin = {top: 20, right: 200, bottom: 30, left: 40},
+//http://bl.ocks.org/mbostock/7555321
+function wrap(text, width) {
+  text.each(function() {
+    var text = d3.select(this),
+        words = text.text().split(/\s+/).reverse(),
+        word,
+        line = [],
+        lineNumber = 0,
+        lineHeight = 1.1, // ems
+        y = text.attr("y"),
+        dy = parseFloat(text.attr("dy")),
+        tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+      }
+    }
+  });
+}
+
+var margin = {top: 20, right: 200, bottom: 40, left: 40},
     width = 1100 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -85,8 +110,9 @@ d3.json("input.json", function(error, data) {
   svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
-      .call(make_x_axis()
-  );
+      .call(make_x_axis())
+    .selectAll(".tick text")
+      .call(wrap, x.rangeBand());
 
   svg.append("g")
       .attr("class", "y axis")
