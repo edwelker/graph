@@ -12,7 +12,8 @@
                 "Mailing list traffic": 0,
                 "Tool simplicity": 1,
                 "Links to books written": 0,
-                "Internal libraries": 0
+                "Internal libraries": 0,
+                "Hands-on/video trainings": 0
             },
             {
                 "_name": "Agile",
@@ -25,7 +26,8 @@
                 "Mailing list traffic": 0,
                 "Tool simplicity": 0,
                 "Links to books written": 0,
-                "Internal libraries": 0
+                "Internal libraries": 0,
+                "Hands-on/video trainings": 0
             },
             {
                 "_name": "OSS",
@@ -38,7 +40,8 @@
                 "Mailing list traffic": 0,
                 "Tool simplicity": 0,
                 "Links to books written": 0,
-                "Internal libraries": 0
+                "Internal libraries": 0,
+                "Hands-on/video trainings": 0
             },
             {
                 "_name": "Teamcity",
@@ -51,7 +54,8 @@
                 "Mailing list traffic": 1,
                 "Tool simplicity": 0,
                 "Links to books written": 0,
-                "Internal libraries": 0
+                "Internal libraries": 0,
+                "Hands-on/video trainings": 0
             },
             {
                 "_name": "Artifactory",
@@ -64,7 +68,8 @@
                 "Mailing list traffic": 0,
                 "Tool simplicity": 1,
                 "Links to books written": 0,
-                "Internal libraries": 0
+                "Internal libraries": 0,
+                "Hands-on/video trainings": 0
             },
             {
                 "_name": "Stash",
@@ -77,20 +82,22 @@
                 "Mailing list traffic": 0,
                 "Tool simplicity": 1,
                 "Links to books written": 0,
-                "Internal libraries": 0
+                "Internal libraries": 0,
+                "Hands-on/video trainings": 0
             },
             {
                 "_name": "Django",
-                "Overall NCBI use": 0,
+                "Overall NCBI use": 1,
                 "Internal docs in DT": 0,
                 "External docs in DT": 1,
                 "Self directed training in DT": 0,
-                "NCBI experts": 2,
+                "NCBI experts": 1,
                 "Advertised mailing list?": 0,
                 "Mailing list traffic": 0,
                 "Tool simplicity": 1,
                 "Links to books written": 0,
-                "Internal libraries": 1
+                "Internal libraries": 1,
+                "Hands-on/video trainings": 0
             },
             {
                 "_name": "Git",
@@ -103,7 +110,8 @@
                 "Mailing list traffic": 0,
                 "Tool simplicity": 0,
                 "Links to books written": 2,
-                "Internal libraries": 0
+                "Internal libraries": 0,
+                "Hands-on/video trainings": 1
             },
             {
                 "_name": "Automated deployment",
@@ -116,7 +124,8 @@
                 "Mailing list traffic": 0,
                 "Tool simplicity": 0,
                 "Links to books written": 0,
-                "Internal libraries": 0
+                "Internal libraries": 0,
+                "Hands-on/video trainings": 0
             },
             {
                 "_name": "Applog",
@@ -129,10 +138,11 @@
                 "Mailing list traffic": 0,
                 "Tool simplicity": 0,
                 "Links to books written": 0,
-                "Internal libraries": 1
+                "Internal libraries": 1,
+                "Hands-on/video trainings": 0
             },
             {
-                "_name": "Portal",
+                "_name": "Portal (for example)",
                 "Overall NCBI use": 2,
                 "Internal docs in DT": 2,
                 "External docs in DT": 0,
@@ -142,7 +152,8 @@
                 "Mailing list traffic": 2,
                 "Tool simplicity": 0,
                 "Links to books written": 0,
-                "Internal libraries": 2
+                "Internal libraries": 2,
+                "Hands-on/video trainings": 1
             }
         ]
 }

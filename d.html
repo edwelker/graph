@@ -102,7 +102,7 @@ d3.json("input.json", function(error, data) {
     d.total = d.increments[d.increments.length - 1].y1;
   });
 
-  //data.tools.sort(function(a, b) { return b.total - a.total; });
+  data.tools.sort(function(a, b) { return b.total - a.total; });
 
   x.domain(data.tools.map(function(d) { return d._name; }));
   y.domain([0, max]);
@@ -125,7 +125,7 @@ d3.json("input.json", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Score");
+//      .text("Score");
 
   var tool = svg.selectAll(".tool")
       .data(data.tools)
