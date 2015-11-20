@@ -89,7 +89,10 @@ var svg = d3.select("body").append("svg")
 d3.json("input.json", function(error, data) {
 
   //exclude _name
-  var fields = d3.keys(data.tools[0]).filter(function(key){ return key !== "_name"; })
+  var fields = d3.keys(data.tools[0]).filter(function(key){ return key !== "_name"; }) 
+  //above key will give a unique key to the dom node, and it will allow you to adjust
+  //the same stuff later.
+
 
   color.domain(fields);
 
